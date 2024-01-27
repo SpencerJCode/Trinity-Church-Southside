@@ -14,6 +14,9 @@ body {
     background-image: url("rockbackground.jpg");
     background-size: cover;
     height:100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .main_header {
@@ -68,6 +71,10 @@ a {
 .spaced {
     margin-top: 12px;
     margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pop_content {
@@ -96,4 +103,13 @@ a {
 
 .text_spaced {
     margin: 15px;
+}
+
+.footer {
+    border-top: 2px solid blanchedalmond;
+    font-size: 44px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    left: 5%;
 }
