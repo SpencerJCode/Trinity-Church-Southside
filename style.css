@@ -69,3 +69,31 @@ a {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+.pop_content {
+    width: 80vw;
+    font-size: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid blanchedalmond;
+}
+
+.body_content {
+    width: 80vw;
+    font-size: 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid blanchedalmond;
+}
+
+.text_spaced {
+    margin: 15px;
+}
