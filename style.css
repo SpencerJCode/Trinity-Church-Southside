@@ -15,7 +15,6 @@ body {
     background-size: cover;
     height:100vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -29,6 +28,7 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     border: 1px solid blanchedalmond;
+    background-color: rgb(255 235 205 / 40%);
 }
 
 .navbar_container {
@@ -42,7 +42,7 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     border: 1px solid blanchedalmond;
-
+    background-color: rgb(255 235 205 / 40%);
 }
 
 .no_bullets {
@@ -87,6 +87,32 @@ a {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     border: 1px solid blanchedalmond;
+    background-color: rgb(255 235 205 / 40%);
+}
+
+.article_header {
+    width: 80vw;
+    font-size: 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border-bottom-color : 1px solid blanchedalmond;
+    background-color: rgb(255 235 205 / 40%);
+}
+
+.article_content {
+    width: 80vw;
+    font-size: 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    background-color: rgb(255 235 205 / 40%);
 }
 
 .body_content {
@@ -99,17 +125,25 @@ a {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     border: 1px solid blanchedalmond;
+    background-color: rgb(255 235 205 / 40%);
 }
 
 .text_spaced {
     margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.big_link {
+    color: rgb(106, 73, 22);
 }
 
 .footer {
     border-top: 2px solid blanchedalmond;
     font-size: 44px;
     backdrop-filter: blur(10px);
-    position: absolute;
-    bottom: 0;
-    left: 5%;
+    margin: 0 auto;
+    margin-top:50px;
+    color: rgb(106, 73, 22);
 }
