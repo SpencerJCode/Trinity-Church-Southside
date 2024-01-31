@@ -92,7 +92,7 @@ a {
 
 .article_header {
     width: 80vw;
-    font-size: 24px;
+    font-size: 32px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -133,6 +133,14 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.text_spaced_italics {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-style: italic;
 }
 
 .big_link {
