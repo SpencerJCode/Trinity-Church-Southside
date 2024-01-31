@@ -59,12 +59,11 @@ a {
 } 
 
 .list_link:hover {
-    color:bisque;
     cursor: pointer;
 }
 
 .list_link_selected {
-    color:bisque;
+    color: rgb(106, 73, 22);
     text-decoration: underline;
 }
 
@@ -125,6 +124,18 @@ a {
     background-color: rgb(255 235 205 / 40%);
 }
 
+.form_select {
+    width: 10vw;
+    font-size: 24px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    background-color: rgb(255 235 205 / 40%);
+}
+
 .text_spaced {
     margin: 15px;
     display: flex;
@@ -142,6 +153,46 @@ a {
 
 .big_link {
     color: rgb(106, 73, 22);
+}
+
+.go_button {
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 34px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(106, 73, 22);
+    background-color: rgb(255 235 205 /60%);
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.go_button:hover {
+    cursor: pointer;
+    background-color: rgb(255 235 205);
+}
+
+.play_button {
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 24px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(106, 73, 22);
+    background-color: rgb(255 235 205 /60%);
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    width: 150px;
+}
+
+.play_button:hover {
+    cursor: pointer;
+    background-color: rgb(255 235 205);
 }
 
 .footer {
