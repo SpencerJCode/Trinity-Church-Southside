@@ -27,8 +27,9 @@ body {
     margin-top: 40px;
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    border: 1px solid blanchedalmond;
     background-color: rgb(255 235 205 / 40%);
+    color: rgb(106, 73, 22);
+
 }
 
 .navbar_container {
@@ -41,7 +42,6 @@ body {
     margin-top: 40px;
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    border: 1px solid blanchedalmond;
     background-color: rgb(255 235 205 / 40%);
 }
 
@@ -86,7 +86,6 @@ a {
     margin-top: 40px;
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    border: 1px solid blanchedalmond;
     background-color: rgb(255 235 205 / 40%);
 }
 
@@ -99,7 +98,6 @@ a {
     margin-top: 40px;
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    border-bottom-color : 1px solid blanchedalmond;
     background-color: rgb(255 235 205 / 40%);
 }
 
@@ -124,7 +122,6 @@ a {
     margin-top: 20px;
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    border: 1px solid blanchedalmond;
     background-color: rgb(255 235 205 / 40%);
 }
 
@@ -154,4 +151,6 @@ a {
     margin: 0 auto;
     margin-top:50px;
     color: rgb(106, 73, 22);
+    background-color: rgb(255 235 205 / 20%);
+
 }
