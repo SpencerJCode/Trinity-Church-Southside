@@ -19,3 +19,11 @@ function playPsalm() {
         location.reload();
     }
 }
+
+function setPsalmSelect(){
+    var e = document.getElementById("psalm_select");
+    var currentPsalm = window.location.pathname.toString();
+    var theDot = currentPsalm.indexOf(".");
+    currentPsalm = currentPsalm.substring(14,theDot);
+    e.value = `${currentPsalm}`;
+}
