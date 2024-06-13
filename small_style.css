@@ -19,15 +19,14 @@ body {
 }
 
 .main_header {
-    width: 80vw;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 37px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
     backdrop-filter: blur(10px);
-    border-radius: 5px;
     background-color: rgba(255, 255, 255, .6);
     color: rgb(106, 73, 22);
     text-wrap:pretty;
@@ -209,4 +208,6 @@ a {
     width: 100%;
     text-wrap:pretty;
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
