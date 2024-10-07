@@ -11,7 +11,6 @@ margin: 0;
 }
 
 body {
-    background-image: url("rockbackground.jpg");
     background-size: cover;
     height:100vh;
     display: flex;
@@ -27,8 +26,8 @@ body {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, .6);
-    color: rgb(106, 73, 22);
+    background-color: black;
+    color: rgb(177, 134, 69);
     text-wrap:pretty;
     text-align: center;
 }
@@ -63,7 +62,7 @@ a {
 }
 
 .list_link_selected {
-    color: rgb(106, 73, 22);
+    color: rgb(177, 134, 69);
     text-decoration: underline;
 }
 
@@ -86,7 +85,7 @@ a {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .6);
-    color: rgb(106, 73, 22);
+    color: rgb(177, 134, 69);
     text-wrap:pretty;
     text-align: center;
 }
@@ -155,7 +154,7 @@ a {
 }
 
 .big_link {
-    color: rgb(106, 73, 22);
+    color: rgb(177, 134, 69);
 }
 
 .go_button {
@@ -165,7 +164,7 @@ a {
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    color: rgb(106, 73, 22);
+    color: rgb(177, 134, 69);
     background-color: rgba(255, 255, 255, .6);
     border-radius: 6px;
     outline: none;
@@ -175,7 +174,7 @@ a {
 
 .go_button:hover {
     cursor: pointer;
-    background-color: rgb(255 235 205);
+    background-color: black;
 }
 
 .play_button {
@@ -185,7 +184,7 @@ a {
     padding: 5px;
     text-align: center;
     text-decoration: none;
-    color: rgb(106, 73, 22);
+    color: rgb(177, 134, 69);
     background-color: rgba(255, 255, 255, .6);
     border-radius: 6px;
     outline: none;
@@ -195,7 +194,7 @@ a {
 
 .play_button:hover {
     cursor: pointer;
-    background-color: rgb(255 235 205);
+    background-color: black;
 }
 
 .footer {
@@ -203,8 +202,8 @@ a {
     font-size: 22px;
     margin: 0 auto;
     margin-top:50px;
-    color: rgb(106, 73, 22);
-    background-color: rgba(255, 255, 255, .6);
+    color: rgb(177, 134, 69);
+    background-color:  black;
     width: 100%;
     text-wrap:pretty;
     text-align: center;
