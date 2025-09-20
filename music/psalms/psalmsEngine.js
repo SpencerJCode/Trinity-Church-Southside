@@ -31,10 +31,10 @@ const psalmsEngine = class {
             }
         })
         .catch((e) => console.error(e));
+        this.audio = new Audio(`/assets/musicfiles/Psalm${this.selectedPsalm}.mp3`);
     }
 
     loadPsalm(psalmNumber) {
-        console.log("Loading psalm " + psalmNumber);
         this.selectedPsalm = psalmNumber;
         this.getPsalmVerses(this.selectedPsalm);
     }
@@ -45,19 +45,8 @@ const psalmsEngine = class {
             let element = document.createElement("option");
             element.innerHTML = "Psalm " + i;
             element.value=i;
+            element.classList.add("optionBack");
             psalmSelectDiv.appendChild(element);
-        }
-    }
-
-    playPsalm() {
-        var button = document.getElementById("player");
-        var audio;
-        if (button.innerHTML == "PLAY") {
-            audio = new Audio(this.audioPath.replace("*",this.selectedPsalm));
-            audio.play();
-            button.innerHTML = "STOP"
-        } else {
-            location.reload();
         }
     }
 };

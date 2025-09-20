@@ -107,6 +107,7 @@ a {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .6);
+    color: rgb(177, 134, 69);
 }
 
 .article_content {
@@ -143,6 +144,14 @@ a {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .6);
+}
+
+.form_select:hover {
+    cursor: pointer;
+}
+
+.selector:hover {
+    cursor: pointer;
 }
 
 .text_spaced {
@@ -216,4 +225,14 @@ a {
     height: 160px;
     text-wrap:pretty;
     text-align: center;
+}
+
+.section_line {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.optionBack {
+    background-color: rgb(255, 255, 255);
 }

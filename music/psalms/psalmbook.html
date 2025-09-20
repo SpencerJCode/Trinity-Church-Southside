@@ -23,7 +23,11 @@
     <script src="psalmsEngine.js"></script>
 </head>
 <body>
-    <div class="main_header"><div class="spaced"><a href="/index.html">Trinity Church Southside</a></div></div>
+    <div class="main_header">
+        <div class="spaced">
+            <a href="/index.html">Trinity Church Southside</a>
+        </div>
+    </div>
     <div class="navbar_container">
     <div class="spaced">
         <ul class="no_bullets">
@@ -35,6 +39,8 @@
         </ul>
     </div>
     </div>
+    <br>
+    <span class="section_line"></span>
     <div class="pop_content">
         <div class="spaced">
             <span id="psalm_title"></span>
@@ -45,11 +51,13 @@
     <div class="body_content">
         <div id="psalm_verses" class="text_spaced"></div>
     </div>
+    <span class="section_line"></span>
+    <br>
     <button class="play_button" onclick=playPsalm() id="psalm_player">Play</button>
     <br>
     <br>
     <div class="form_select">
-        <select id="psalm_select"></select>
+        <select id="psalm_select" class="selector"></select>
     </div>
     <button class="go_button" onclick=goToPsalm()>Go!</button>
     <div class="footer">KNOWING | LOVING | ENJOYING</div>
@@ -57,22 +65,32 @@
     <script>
         var engine = new psalmsEngine();
         engine.setFirstLoad();
-
+        engine.audio.addEventListener("ended", function(){
+            engine.audio.currentTime = 0;
+            button.innerHTML = "Play";
+        });
+        var button = document.getElementById("psalm_player");
         function goToPsalm() {
             var e = document.getElementById("psalm_select");
             var psalm = e.value;
             engine.loadPsalm(psalm);
+            engine.audio.addEventListener("ended", function(){
+                engine.audio.currentTime = 0;
+                button.innerHTML = "Play";
+            });
         }
         function playPsalm() {
-            var button = document.getElementById("psalm_player");
             if (button.innerHTML == "Play") {
-                engine.audio = new Audio(`/assets/musicfiles/Psalm${engine.selectedPsalm}.mp3`);
                 engine.audio.play();
                 button.innerHTML = "Stop"
+                
             } else {
                 engine.audio.pause();
                 button.innerHTML = "Play";
             }
+        }
+        function changeButtonTextWhenFinished(){
+
         }
     </script>
 </html>

@@ -69,6 +69,7 @@ a {
 .spaced {
     margin-top: 12px;
     margin-bottom: 12px;
+    font-size: 26px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -100,6 +101,7 @@ a {
     backdrop-filter: blur(10px);
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .6);
+    color: rgb(177, 134, 69);
 }
 
 .article_content {
@@ -128,7 +130,7 @@ a {
 
 .form_select {
     width: 10vw;
-    font-size: 12px;
+    font-size: 18px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -138,8 +140,17 @@ a {
     background-color: rgba(255, 255, 255, .6);
 }
 
+.form_select:hover {
+    cursor: pointer;
+}
+
+.selector:hover {
+    cursor: pointer;
+}
+
 .text_spaced {
-    margin: 15px;
+    margin: 10px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -160,7 +171,7 @@ a {
 .go_button {
     margin: 0 auto;
     margin-top: 5px;
-    font-size: 17px;
+    font-size: 20px;
     padding: 5px;
     text-align: center;
     text-decoration: none;
@@ -180,7 +191,7 @@ a {
 .play_button {
     margin: 0 auto;
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 18px;
     padding: 5px;
     text-align: center;
     text-decoration: none;
@@ -190,6 +201,7 @@ a {
     outline: none;
     transition: 0.3s;
     width: 150px;
+    border: 1px solid black;
 }
 
 .play_button:hover {
@@ -209,4 +221,14 @@ a {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.section_line {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.optionBack {
+    background-color: rgb(255, 255, 255);
 }
