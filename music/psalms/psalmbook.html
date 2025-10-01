@@ -19,7 +19,7 @@
     <meta name="description"
         content="TCS exists to glorify God through knowing, loving, and enjoying Christ Jesus by the Spirit">
     <meta name="author" content="Spencer Johnson">
-    <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+    <link rel="icon" type="image/x-icon" href="\assets\favicon.ico">
     <script src="psalmsEngine.js"></script>
 </head>
 <body>
@@ -71,6 +71,8 @@
         });
         var button = document.getElementById("psalm_player");
         function goToPsalm() {
+            engine.audio.pause();
+            button.innerHTML = "Play";
             var e = document.getElementById("psalm_select");
             var psalm = e.value;
             engine.loadPsalm(psalm);
