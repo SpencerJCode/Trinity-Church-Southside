@@ -2,7 +2,7 @@ const psalmsEngine = class {
     constructor() {
         this.selectedPsalm = 1;
         this.audioPath = `/assets/musicfiles/Psalm*.mp3`;
-        this.numberOfPsalms = 3;
+        this.numberOfPsalms = 4;
         this.audio = new Audio(`/assets/musicfiles/Psalm${1}.mp3`);
     }
     setFirstLoad() {
