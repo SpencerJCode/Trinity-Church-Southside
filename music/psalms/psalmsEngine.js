@@ -2,7 +2,7 @@ const psalmsEngine = class {
     constructor() {
         this.selectedPsalm = 1;
         this.audioPath = `/assets/musicfiles/Psalm*.mp3`;
-        this.numberOfPsalms = 4;
+        this.PsalmsOptions = [1,2,3,4,37,90];
         this.audio = new Audio(`/assets/musicfiles/Psalm${1}.mp3`);
     }
     setFirstLoad() {
@@ -40,11 +40,11 @@ const psalmsEngine = class {
     }
 
     getPsalmSelectOptions() {
-        for (let i=1; i<this.numberOfPsalms+1; i++) {
+        for (let i=0; i<this.PsalmsOptions.length; i++) {
             var psalmSelectDiv = document.getElementById("psalm_select");
             let element = document.createElement("option");
-            element.innerHTML = "Psalm " + i;
-            element.value=i;
+            element.innerHTML = "Psalm " + this.PsalmsOptions[i];
+            element.value = this.PsalmsOptions[i];
             element.classList.add("optionBack");
             psalmSelectDiv.appendChild(element);
         }
