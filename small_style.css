@@ -8,6 +8,9 @@ border: 0 none;
 outline: 0;
 padding: 0;
 margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body {
@@ -27,9 +30,13 @@ body {
     align-items: center;
     backdrop-filter: blur(10px);
     background-color: black;
-    color: rgb(177, 134, 69);
+    color: rgb(209, 165, 100);
     text-wrap:pretty;
     text-align: center;
+    background-image: url("/assets/treebackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navbar_container {
@@ -215,7 +222,7 @@ a {
     margin: 0 auto;
     margin-top:50px;
     color: rgb(177, 134, 69);
-    background-color:  black;
+    background-color: #950606;
     width: 100%;
     text-wrap:pretty;
     text-align: center;
