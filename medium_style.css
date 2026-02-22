@@ -38,6 +38,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.logo {
+    width: 60px;
+    margin-left: 10px;
+}
+
 .navbar_container {
     width: 80vw;
     font-size: 24px;
