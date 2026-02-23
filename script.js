@@ -33,11 +33,11 @@ function checkURLForRedirects() {
     let currentLocation = window.location.href;
     console.log(currentLocation);
     if (currentLocation.includes('com/?psalm')) {
-        let parameter = currentLocation.split('/')[1];
+        let parameter = currentLocation.split('/?psalm')[1];
         console.log(parameter);
-        console.log(1);
-        console.log(parameter.substring(5, parameter.length));
-        let psalmNumber = parseInt(parameter.substring(5, parameter.length));
-        console.log("Loading Psalm " + psalmNumber);
+        let psalmNumber = parseInt(parameter);
+        if (psalmNumber != NaN) {
+          console.log("Loading Psalm " + psalmNumber);
+        }
     }
 }
