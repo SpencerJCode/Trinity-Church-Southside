@@ -25,6 +25,7 @@ body {
     min-height: 200px;
     font-size: 74px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(20px);
@@ -39,8 +40,8 @@ body {
 }
 
 .logo {
-    width: 60px;
-    margin-right: 10px;
+    width: 80px;
+    margin-top: 10px;
 }
 
 .navbar_container {
