@@ -32,7 +32,7 @@ function checkURLForRedirects() {
     console.log("Checking for parameters");
     let currentLocation = window.location.href;
     console.log(currentLocation);
-    if (currentLocation.includes('com/psalm')) {
+    if (currentLocation.includes('com/?psalm')) {
         let parameter = currentLocation.split('/')[1];
         let psalmNumber = parseInt(parameter.substring(5));
         console.log("Loading Psalm " + psalmNumber);
