@@ -23,6 +23,11 @@
     <script src="goshenWebEngine.js"></script>
 </head>
 <body onload="webEngine.checkURLForRedirects()">
+    <div id="Loader" class="loader bk-5">
+        <div></div>
+        <img src="/assets/tcslogo.png" class="loadingLogo"/>
+        <div></div>
+    </div>
     <div id="Header"></div>
     <div class="navigation frt-1" style="margin-top:10px;">
         <div id="ImNew" class="navigationItem" onclick="webEngine.loadPage(this.id)">I'm New</div>
@@ -32,7 +37,6 @@
     </div>
     <div id="Content"></div>
     <div class="footer bk-2 frt-3" style="margin-top:50px;">KNOWING | LOVING | ENJOYING</div>
-    <!--div style="position: fixed; top:100px; right: -20px; padding:30px; transform: rotate(30deg)" class="bk-4 frt-1">This page is under construction, please check back soon.</div-->
 </body>
 </html>
 <!--onclick="webEngine.loadPage(this.id)"-->

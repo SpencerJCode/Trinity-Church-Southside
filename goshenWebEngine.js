@@ -1,17 +1,18 @@
 class goshenWebEngine {
     config= new pageConfiguration();
     psalm=1;
+    headerDiv;
+    contentDiv;
+    loader;
     async loadHeader(){
         const resp = await fetch(this.config.header);
         const html = await resp.text();
-        const headerDiv = document.getElementById("Header");
-        headerDiv.insertAdjacentHTML("afterbegin", html);
+        this.headerDiv.insertAdjacentHTML("afterbegin", html);
     }
     async loadContent(){
         const resp = await fetch(this.config.content);
         const html = await resp.text();
-        const contentDiv = document.getElementById("Content");
-        contentDiv.insertAdjacentHTML("afterbegin", html); 
+        this.contentDiv.insertAdjacentHTML("afterbegin", html); 
     }
 
     checkURLForRedirects() {
@@ -20,11 +21,12 @@ class goshenWebEngine {
             let parameter = currentLocation.split('/?psalm')[1];
             let psalmNumber = parseInt(parameter);
             if (psalmNumber != NaN) {
-
+                psalm = psalmNumber;
+                this.loadPresets('Psalm');
             }
 
         } else {
-            this.loadPresets();
+            this.loadPresets('Homepage');
         }
     }
     setNavigationConfiguration(){
@@ -33,13 +35,19 @@ class goshenWebEngine {
             navigationItem.classList.add("selected");
         }
     }
-    loadPresets(){
-        this.loadHeader();
-        this.loadContent();
-        this.setNavigationConfiguration();
-
+    loadPresets(page){
+        this.headerDiv = document.getElementById("Header");
+        this.contentDiv = document.getElementById("Content");
+        this.loader = document.getElementById("Loader");
+        if (page == 'Homepage') {
+            this.loadHeader();
+            this.loadContent();
+            this.setNavigationConfiguration();
+            this.hideLoader();
+        }
     }
     loadPage(pageName){
+        this.showLoader();
         this.config.loadConfig(pageName);
         if (this.config.shouldReloadHeader){
             this.loadHeader();
@@ -48,7 +56,15 @@ class goshenWebEngine {
         if (this.config.shouldReloadContent){
             this.loadContent();
             this.config.shouldReloadContent=false;
-        }   
+        }
+        this.hideLoader();
+    }
+    hideLoader() {
+        this.loader.classList.add("hidden");
+    }
+
+    showLoader() {
+        this.loader.classList.remove("hidden");
     }
 }
 class pageConfiguration {
