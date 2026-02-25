@@ -24,16 +24,15 @@
 </head>
 <body onload="webEngine.checkURLForRedirects()">
     <div id="Header"></div>
-    <ul class="navigation frt-1" style="margin-top:10px;">
-        <!--li id="ImNew" class="navigationItem" onclick="webEngine.loadPage(this.id)">I'm New</li-->
-        <li id="AboutUs" class="navigationItem">About Us</li>
-        <li id="Distinctives" class="navigationItem">Distinctives</li>
-        <li id="TheLordsDay" class="navigationItem">The Lord's Day</li>
-        <li id="Music" class="navigationItem">Music</li>
-        <li id="Podcast">Podcast (Coming Soon!)</li>
-    </ul>
+    <div class="navigation frt-1" style="margin-top:10px;">
+        <div id="ImNew" class="navigationItem" onclick="webEngine.loadPage(this.id)">I'm New</div>
+        <div id="AboutUs">About Us</div>
+        <div id="Music">Music</div>
+        <div>Resources</div>
+    </div>
     <div id="Content"></div>
     <div class="footer bk-2 frt-3" style="margin-top:50px;">KNOWING | LOVING | ENJOYING</div>
     <!--div style="position: fixed; top:100px; right: -20px; padding:30px; transform: rotate(30deg)" class="bk-4 frt-1">This page is under construction, please check back soon.</div-->
 </body>
 </html>
+<!--onclick="webEngine.loadPage(this.id)"-->
