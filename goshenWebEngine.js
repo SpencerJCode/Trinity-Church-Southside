@@ -7,12 +7,14 @@ class goshenWebEngine {
     async loadHeader(){
         const resp = await fetch(this.config.header);
         const html = await resp.text();
-        this.headerDiv.insertAdjacentHTML("afterbegin", html);
+        //this.headerDiv.insertAdjacentHTML("afterbegin", html);
+        this.headerDiv.innerHTML = html;
     }
     async loadContent(){
         const resp = await fetch(this.config.content);
         const html = await resp.text();
-        this.contentDiv.insertAdjacentHTML("afterbegin", html); 
+        //this.contentDiv.insertAdjacentHTML("afterbegin", html);
+        this.contentDiv.innerHTML = html;
     }
 
     checkURLForRedirects() {
@@ -46,15 +48,17 @@ class goshenWebEngine {
             this.hideLoader();
         }
     }
-    loadPage(pageName){
+
+    async loadPage(pageName){
+        await this.config.loadConfig(pageName);
         this.showLoader();
-        this.config.loadConfig(pageName);
         if (this.config.shouldReloadHeader){
-            this.loadHeader();
+            await this.loadHeader();
             this.config.shouldReloadHeader=false;
         }
         if (this.config.shouldReloadContent){
-            this.loadContent();
+            console.log(this.config.page);
+            await this.loadContent();
             this.config.shouldReloadContent=false;
         }
         this.hideLoader();
