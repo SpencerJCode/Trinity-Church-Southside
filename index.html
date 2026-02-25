@@ -1,13 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' media='screen and (min-width: 701px)' href='large_style.css' />
-    <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 700px)' href='medium_style.css' />
-    <link rel='stylesheet' media='screen and (max-width: 480px)' href='small_style.css' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel='stylesheet' media='screen and (min-width: 701px)' href='desktop.css' />
+    <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 700px)' href='tablet.css' />
+    <link rel='stylesheet' media='screen and (max-width: 480px)' href='mobile.css' />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Trinity Church Southside</title>
@@ -19,47 +18,22 @@
     <meta name="description"
         content="TCS exists to glorify God through knowing, loving, and enjoying Christ Jesus by the Spirit">
     <meta name="author" content="Spencer Johnson">
-    <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
-    <script src="script.js"></script>
+    <!--link rel="icon" type="image/x-icon" href="favicon.ico"-->
+
+    <script src="goshenWebEngine.js"></script>
 </head>
-<body onload="checkURLForRedirects()">
-    <div class="main_header">
-        <img src="/assets/tcslogo.png" class="logo"/>
-        <div>Trinity Church Southside</div>
-    </div>
-    <div class="navbar_container">
-    
-        <ul class="no_bullets">
-            <li class="list_link"><a href="/new.html">I'm New</a></li>
-            <li class="list_link"><a href="/AboutUs/beliefs.html">About Us</a></li>
-            <li class="list_link"><a href="/distinctives.html">Distinctives</a></li>
-            <li class="list_link"><a href="/lordsday.html">The Lord's Day</a></li>
-            <li class="list_link"><a href="/music.html">Music</a></li>
-        </ul>
-
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="pop_content">
-        <div class="spaced">
-            <div class="main_text">
-                To Glorify God Through
-            </div>
-            <div class="main_text">
-                Knowing, Loving, and Enjoying Christ Jesus
-            </div>
-            <div class="main_text">
-                By The Spirit
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-
-    <div class="footer">KNOWING | LOVING | ENJOYING</div>
+<body onload="webEngine.checkURLForRedirects()">
+    <div id="Header"></div>
+    <ul class="navigation frt-1" style="margin-top:10px;">
+        <!--li id="ImNew" class="navigationItem" onclick="webEngine.loadPage(this.id)">I'm New</li-->
+        <li id="AboutUs" class="navigationItem">About Us</li>
+        <li id="Distinctives" class="navigationItem">Distinctives</li>
+        <li id="TheLordsDay" class="navigationItem">The Lord's Day</li>
+        <li id="Music" class="navigationItem">Music</li>
+        <li id="Podcast">Podcast (Coming Soon!)</li>
+    </ul>
+    <div id="Content"></div>
+    <div class="footer bk-2 frt-3" style="margin-top:50px;">KNOWING | LOVING | ENJOYING</div>
+    <div style="position: fixed; top:100px; right: -20px; padding:30px; transform: rotate(30deg)" class="bk-4 frt-1">This page is under construction, please check back soon.</div>
 </body>
 </html>

@@ -1,0 +1,4 @@
+header:header.html
+navigation:mainNavigation.html
+content:imnew.html
+footer:footer.html

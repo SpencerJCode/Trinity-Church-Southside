@@ -1,0 +1,4 @@
+header:header.html
+navigation:mainNavigation.html
+content:homepage.html
+footer:footer.html

@@ -27,17 +27,3 @@ function setPsalmSelect(){
     currentPsalm = currentPsalm.substring(14,theDot);
     e.value = `${currentPsalm}`;
 }
-
-function checkURLForRedirects() {
-    console.log("Checking for parameters");
-    let currentLocation = window.location.href;
-    console.log(currentLocation);
-    if (currentLocation.includes('com/?psalm')) {
-        let parameter = currentLocation.split('/?psalm')[1];
-        console.log(parameter);
-        let psalmNumber = parseInt(parameter);
-        if (psalmNumber != NaN) {
-          console.log("Loading Psalm " + psalmNumber);
-        }
-    }
-}
