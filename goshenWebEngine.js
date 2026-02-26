@@ -31,12 +31,13 @@ class goshenWebEngine {
             this.loadPresets('Homepage');
         }
     }
+
     setNavigationConfiguration(){
-        if (this.config.page != "homepage"){
-            const navigationItem = document.getElementById(this.config.page);
-            navigationItem.classList.add("selected");
-        }
+        console.log(this.config.page);
+        const navigationItem = document.getElementById(this.config.page);
+        navigationItem.classList.add("selected");
     }
+
     loadPresets(page){
         this.headerDiv = document.getElementById("Header");
         this.contentDiv = document.getElementById("Content");
@@ -44,25 +45,31 @@ class goshenWebEngine {
         if (page == 'Homepage') {
             this.loadHeader();
             this.loadContent();
-            this.setNavigationConfiguration();
             this.hideLoader();
         }
     }
 
     async loadPage(pageName){
-        await this.config.loadConfig(pageName);
-        this.showLoader();
-        if (this.config.shouldReloadHeader){
-            await this.loadHeader();
-            this.config.shouldReloadHeader=false;
+        if (this.config.page != pageName) {
+            await this.config.loadConfig(pageName);
+            this.showLoader();
+            if (this.config.shouldReloadHeader){
+                await this.loadHeader();
+                this.config.shouldReloadHeader=false;
+            }
+            if (this.config.shouldReloadContent){
+                await this.loadContent();
+                this.config.shouldReloadContent=false;
+            }
+            const navigationItem = document.querySelector(".selected");
+            if (navigationItem != null) {
+                navigationItem.classList.remove("selected");
+            }
+            this.setNavigationConfiguration();
+            this.hideLoader();
         }
-        if (this.config.shouldReloadContent){
-            console.log(this.config.page);
-            await this.loadContent();
-            this.config.shouldReloadContent=false;
-        }
-        this.hideLoader();
     }
+
     hideLoader() {
         this.loader.classList.add("hidden");
     }
@@ -80,6 +87,7 @@ class pageConfiguration {
     pages = ('ImNew');
 
     async loadConfig(page){
+        this.page = page;
         const resp = await fetch("configurations/" + page + ".txt");
         const lines = await resp.text();
         let configArray = lines.split(/\r?\n/);
