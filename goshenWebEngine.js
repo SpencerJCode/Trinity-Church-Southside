@@ -5,15 +5,15 @@ class goshenWebEngine {
     contentDiv;
     loader;
     async loadHeader(){
+        console.log(this.config.header);
         const resp = await fetch(this.config.header);
         const html = await resp.text();
-        //this.headerDiv.insertAdjacentHTML("afterbegin", html);
         this.headerDiv.innerHTML = html;
     }
     async loadContent(){
+        console.log(this.config.content);
         const resp = await fetch(this.config.content);
         const html = await resp.text();
-        //this.contentDiv.insertAdjacentHTML("afterbegin", html);
         this.contentDiv.innerHTML = html;
     }
 
@@ -33,7 +33,6 @@ class goshenWebEngine {
     }
 
     setNavigationConfiguration(){
-        console.log(this.config.page);
         const navigationItem = document.getElementById(this.config.page);
         navigationItem.classList.add("selected");
     }
@@ -50,6 +49,7 @@ class goshenWebEngine {
     }
 
     async loadPage(pageName){
+        console.log("Loading " + pageName);
         if (this.config.page != pageName) {
             await this.config.loadConfig(pageName);
             this.showLoader();
