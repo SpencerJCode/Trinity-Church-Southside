@@ -92,7 +92,6 @@ body {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
-    border-radius: 5px;
     text-wrap:pretty;
     text-align: center;
     background-image: url("/assets/treebackground.jpg");
