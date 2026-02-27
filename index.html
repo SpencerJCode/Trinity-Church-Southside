@@ -31,9 +31,43 @@
     <div id="Header"></div>
     <div class="navigation frt-1">
         <div id="imnew" class="navigationItem" onclick="webEngine.loadPage(this.id)">I'm New</div>
-        <div id="aboutus">About Us</div>
-        <div id="music">Music</div>
-        <div>Resources</div>
+        <div id="aboutus" class="navigationCategory">
+            <button class="dropbtn frt-1">
+                About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content frt-1">
+                <div id="lordsday" onclick="webEngine.loadPage(this.id)">Lord's Day</div>
+                <div id="distinctives" onclick="webEngine.loadPage(this.id)">Distinctives</div>
+                <div>Beliefs</div>
+                <div>Membership</div>
+                <div>Leadership</div>
+                <div>Contact Us</div>
+            </div>
+        </div>
+        <div class="navigationCategory">
+            <button class="dropbtn frt-1">
+                Music
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content frt-1">
+                <div id="music" onclick="webEngine.loadPage(this.id)">God's Music</div>
+                <div id="psalms" onclick="webEngine.loadPage(this.id)">Psalms</div>
+                <div>Hymns</div>
+                <div>Spiritual Songs</div>
+            </div>
+        </div>
+        <div id="resources" class="navigationCategory">
+            <button class="dropbtn frt-1">
+                Resources
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content frt-1">
+                <div>Link 1</div>
+                <div>Link 2</div>
+                <div>Link 3</div>
+            </div>
+        </div>
     </div>
     <div id="Content"></div>
     <div class="footer bk-2 frt-3" style="margin-top:50px;">KNOWING | LOVING | ENJOYING</div>
