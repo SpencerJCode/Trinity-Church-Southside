@@ -19,7 +19,7 @@
         content="TCS exists to glorify God through knowing, loving, and enjoying Christ Jesus by the Spirit">
     <meta name="author" content="Spencer Johnson">
     <!--link rel="icon" type="image/x-icon" href="favicon.ico"-->
-
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">   
     <script src="goshenWebEngine.js"></script>
 </head>
 <body onload="webEngine.checkURLForRedirects()">
@@ -39,10 +39,10 @@
             <div class="dropdown-content frt-1">
                 <div id="lordsday" onclick="webEngine.loadPage(this.id)">Lord's Day</div>
                 <div id="distinctives" onclick="webEngine.loadPage(this.id)">Distinctives</div>
-                <div>Beliefs</div>
-                <div>Membership</div>
-                <div>Leadership</div>
-                <div>Contact Us</div>
+                <div id="beliefs" onclick="webEngine.loadPage(this.id)">Beliefs</div>
+                <div id="membership" onclick="webEngine.loadPage(this.id)">Membership</div>
+                <div id="leadership" onclick="webEngine.loadPage(this.id)">Leadership</div>
+                <div id="contactus" onclick="webEngine.loadPage(this.id)">Contact Us</div>
             </div>
         </div>
         <div class="navigationCategory">
@@ -53,8 +53,8 @@
             <div class="dropdown-content frt-1">
                 <div id="music" onclick="webEngine.loadPage(this.id)">God's Music</div>
                 <div id="psalms" onclick="webEngine.loadPage(this.id)">Psalms</div>
-                <div>Hymns</div>
-                <div>Spiritual Songs</div>
+                <div id="hymns" onclick="webEngine.loadPage(this.id)">Hymns</div>
+                <div id="spiritualsongs" onclick="webEngine.loadPage(this.id)">Spiritual Songs</div>
             </div>
         </div>
         <div id="resources" class="navigationCategory">
@@ -63,9 +63,10 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content frt-1">
-                <div>Link 1</div>
-                <div>Link 2</div>
-                <div>Link 3</div>
+                <div id="constitution" onclick="webEngine.loadPage(this.id)">TCS Constitution</div>
+                <div id="creeds" onclick="webEngine.loadPage(this.id)">Creeds</div>
+                <div id="blog" onclick="webEngine.loadPage(this.id)">Blog</div>
+                <div id="podcast" onclick="webEngine.loadPage(this.id)">Podcast (coming soon!)</div>
             </div>
         </div>
     </div>
@@ -73,4 +74,3 @@
     <div class="footer bk-2 frt-3" style="margin-top:50px;">KNOWING | LOVING | ENJOYING</div>
 </body>
 </html>
-<!--onclick="webEngine.loadPage(this.id)"-->
