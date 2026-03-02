@@ -1,2 +1,2 @@
 header:header.html
-content:maintenance.html
+content:beliefs.html
