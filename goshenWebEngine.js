@@ -27,7 +27,7 @@ class goshenWebEngine {
                 const nextURL = 'https://trinitychurchsouthside.com';
                 const nextTitle = parameter;
                 const nextState = { additionalInformation: 'Updated the URL with JS' };
-                window.history.replaceState(nextState, nextTitle, nextURL);
+                window.history.pushState(nextState, nextTitle, nextURL);
                 this.loadPage(parameter);
             } else {
                 this.loadPage('homepage');
