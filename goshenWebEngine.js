@@ -17,9 +17,9 @@ class goshenWebEngine {
         this.contentDiv.innerHTML = html;
     }
 
-    checkURLForRedirects() {
+    async checkURLForRedirects() {
         let currentLocation = window.location.href;
-        if (currentLocation.includes('com/?psalm')) {
+        if (currentLocation.includes('/?psalm')) {
             let parameter = currentLocation.split('/?psalm')[1];
             let psalmNumber = parseInt(parameter);
             if (psalmNumber != NaN) {
@@ -27,7 +27,26 @@ class goshenWebEngine {
                 this.loadPresets('Psalm');
             }
 
+        } else if (currentLocation.includes('?')) {
+            console.log(1);
+            let parameter = currentLocation.split('?')[1];
+            console.log(2);
+            if (parameter.length > 0) {
+            console.log(3);
+                try {
+            console.log(4);
+                    this.loadPresets(parameter);
+                    this.loadPage(parameter);
+                } catch {
+            console.log(5);
+                    this.loadPresets('Homepage');
+                }
+            } else {
+            console.log(6);
+                this.loadPresets('Homepage');
+            }
         } else {
+            console.log(7);
             this.loadPresets('Homepage');
         }
     }
@@ -41,11 +60,10 @@ class goshenWebEngine {
         this.headerDiv = document.getElementById("Header");
         this.contentDiv = document.getElementById("Content");
         this.loader = document.getElementById("Loader");
-        if (page == 'Homepage') {
+        this.config.loadConfig(page);
             this.loadHeader();
             this.loadContent();
             this.hideLoader();
-        }
     }
 
     async loadPage(pageName){
@@ -108,4 +126,3 @@ class pageConfiguration {
     }
 }
 webEngine = new goshenWebEngine();
-
