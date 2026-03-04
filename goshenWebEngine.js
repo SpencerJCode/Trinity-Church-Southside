@@ -24,6 +24,10 @@ class goshenWebEngine {
         if (currentLocation.includes('?')) {
             let parameter = currentLocation.split('?')[1];
             if (this.pages.includes(parameter)) {
+                const nextURL = 'https://trinitychurchsouthside.com';
+                const nextTitle = parameter;
+                const nextState = { additionalInformation: 'Updated the URL with JS' };
+                window.history.replaceState(nextState, nextTitle, nextURL);
                 this.loadPage(parameter);
             } else {
                 this.loadPage('homepage');
