@@ -11,6 +11,12 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-decoration-thickness: 1px!important;
+    text-underline-offset: 2px!important;
+}
+
+a {
+    color: var(--primary-color-4);
 }
 /*COLOR SETS*/
 :root {
@@ -263,4 +269,17 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.heroImage {
+    width: 85vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.captionText {
+    font-size: 16px;
+    margin-bottom: 16px;
 }
