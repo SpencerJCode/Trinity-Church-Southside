@@ -4,6 +4,7 @@ class goshenWebEngine {
     headerDiv;
     contentDiv;
     loader;
+    pages = ['beliefs', 'distinctives', 'homepage', 'imnew', 'leadership', 'lordsday', 'maintenance', 'membership', 'music', 'psalmbook'];
     async loadHeader(){
         console.log(this.config.header);
         const resp = await fetch(this.config.header);
@@ -18,36 +19,17 @@ class goshenWebEngine {
     }
 
     async checkURLForRedirects() {
+        this.loadPresets();
         let currentLocation = window.location.href;
-        if (currentLocation.includes('/?psalm')) {
-            let parameter = currentLocation.split('/?psalm')[1];
-            let psalmNumber = parseInt(parameter);
-            if (psalmNumber != NaN) {
-                psalm = psalmNumber;
-                this.loadPresets('Psalm');
-            }
-
-        } else if (currentLocation.includes('?')) {
-            console.log(1);
+        if (currentLocation.includes('?')) {
             let parameter = currentLocation.split('?')[1];
-            console.log(2);
-            if (parameter.length > 0) {
-            console.log(3);
-                try {
-            console.log(4);
-                    this.loadPresets(parameter);
-                    this.loadPage(parameter);
-                } catch {
-            console.log(5);
-                    this.loadPresets('Homepage');
-                }
+            if (this.pages.includes(parameter)) {
+                this.loadPage(parameter);
             } else {
-            console.log(6);
-                this.loadPresets('Homepage');
+                this.loadPage('homepage');
             }
         } else {
-            console.log(7);
-            this.loadPresets('Homepage');
+            this.loadPage('homepage');
         }
     }
 
@@ -56,14 +38,13 @@ class goshenWebEngine {
         navigationItem.classList.add("selected");
     }
 
-    loadPresets(page){
+    loadPresets(){
         this.headerDiv = document.getElementById("Header");
         this.contentDiv = document.getElementById("Content");
         this.loader = document.getElementById("Loader");
-        this.config.loadConfig(page);
-            this.loadHeader();
-            this.loadContent();
-            this.hideLoader();
+        this.loadHeader();
+        this.loadContent();
+        this.hideLoader();
     }
 
     async loadPage(pageName){
