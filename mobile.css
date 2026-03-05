@@ -268,8 +268,16 @@ body {
     text-align: center;
 }
 
-.heroImage {
+.heroHorizontalImage {
     width: 90vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.heroVerticalImage {
+    height: 40vh;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;

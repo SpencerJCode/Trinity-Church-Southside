@@ -33,6 +33,10 @@ class goshenWebEngine {
         }
     }
 
+    goToLivePage(page) {
+        window.location.href='https://www.trinitychurchsouthside.com?' + page;
+    }
+
     setNavigationConfiguration(){
         const navigationItem = document.getElementById(this.config.page);
         navigationItem.classList.add("selected");
