@@ -17,6 +17,9 @@
 
 a {
     color: var(--primary-color-4);
+    text-decoration-color: var(--primary-color-2)!important;
+    text-decoration-thickness: 2px!important;
+    text-underline-offset: 4px!important;
 }
 
 /*COLOR SETS*/
@@ -186,6 +189,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-weight: 500;
 }
 
 .bodyContent {
@@ -194,6 +198,10 @@ body {
     justify-content: center;
     width: 60vw;
     margin: 0 auto;
+}
+
+.title {
+    font-weight: 500;
 }
 
 .titleText {
@@ -221,6 +229,8 @@ body {
 .bodyText {
     font-size: 26px;
     margin-bottom: 16px;
+    padding-left: 30px;
+    border-left: solid 1px var(--primary-color-3);
 }
 
 .hidden {

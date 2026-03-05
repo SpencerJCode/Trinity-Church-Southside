@@ -185,6 +185,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-weight: 500;
 }
 
 .bodyContent {
@@ -193,6 +194,10 @@ body {
     justify-content: center;
     width: 92vw;
     margin: 0 auto;
+}
+
+.title {
+    font-weight: 500;
 }
 
 .titleText {

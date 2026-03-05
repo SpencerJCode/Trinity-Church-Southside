@@ -184,6 +184,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-weight: 500;
 }
 
 .bodyContent {
@@ -196,6 +197,10 @@ body {
 
 .emptySideBar {
     width:10%;
+}
+
+.title {
+    font-weight: 500;
 }
 
 .titleText {
