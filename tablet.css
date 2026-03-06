@@ -13,6 +13,7 @@
     font-style: normal;
     text-decoration-thickness: 1px!important;
     text-underline-offset: 2px!important;
+    scroll-behavior: smooth;
 }
 
 a {

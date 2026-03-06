@@ -80,6 +80,10 @@ class goshenWebEngine {
     showLoader() {
         this.loader.classList.remove("hidden");
     }
+    scrollTo(id) {
+        const element = document.getElementById(id);
+        element.scrollIntoView();
+    }
 }
 class pageConfiguration {
     page="homepage";
