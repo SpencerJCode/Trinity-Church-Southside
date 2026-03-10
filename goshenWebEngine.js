@@ -6,13 +6,11 @@ class goshenWebEngine {
     loader;
     pages = ['beliefs', 'distinctives', 'homepage', 'imnew', 'leadership', 'lordsday', 'maintenance', 'membership', 'music', 'psalmbook'];
     async loadHeader(){
-        console.log(this.config.header);
         const resp = await fetch(this.config.header);
         const html = await resp.text();
         this.headerDiv.innerHTML = html;
     }
     async loadContent(){
-        console.log(this.config.content);
         const resp = await fetch(this.config.content);
         const html = await resp.text();
         this.contentDiv.innerHTML = html;
@@ -52,7 +50,6 @@ class goshenWebEngine {
     }
 
     async loadPage(pageName){
-        console.log("Loading " + pageName);
         if (this.config.page != pageName) {
             await this.config.loadConfig(pageName);
             this.showLoader();

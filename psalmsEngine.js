@@ -4,10 +4,17 @@ const psalmsEngine = class {
         this.audioPath = `/assets/musicfiles/Psalm*.mp3`;
         this.PsalmsOptions = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,20,21,24,37,40,90];
         this.audio = new Audio(`/assets/musicfiles/Psalm${1}.mp3`);
+        this.button = null;
     }
     setFirstLoad() {
+        console.log("Psalm script starting..");
         this.getPsalmVerses(1);
         this.getPsalmSelectOptions();
+        this.audio.addEventListener("ended", function(){
+            this.audio.currentTime = 0;
+            this.button.innerHTML = "Play";
+        });
+        this.button = document.getElementById("psalm_player");
     }
 
     getPsalmVerses(psalmNumber) {
@@ -49,4 +56,27 @@ const psalmsEngine = class {
             psalmSelectDiv.appendChild(element);
         }
     }
-};
+
+    goToPsalm() {
+        this.audio.pause();
+        this.button.innerHTML = "Play";
+        var e = document.getElementById("psalm_select");
+        var psalm = e.value;
+        this.loadPsalm(psalm);
+        this.audio.addEventListener("ended", function(){
+            this.audio.currentTime = 0;
+            this.button.innerHTML = "Play";
+        });
+    }
+    playPsalm() {
+        if (this.button.innerHTML == "Play") {
+            this.audio.play();
+            this.button.innerHTML = "Stop"    
+        } else {
+            this.audio.pause();
+            this.button.innerHTML = "Play";
+        }
+    }
+}
+
+psalmEngine = new psalmsEngine();
