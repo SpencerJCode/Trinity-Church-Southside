@@ -124,14 +124,16 @@ const psalmsEngine = class {
         this.button = null;
     }
     setFirstLoad() {
-        console.log("Psalm script starting..");
+        console.log("Loading Psalm Engine...");
         this.getPsalmVerses(1);
         this.getPsalmSelectOptions();
         this.audio.addEventListener("ended", function(){
-            this.audio.currentTime = 0;
-            this.button.innerHTML = "Play";
+            this.currentTime = 0;
+            let playButton = document.getElementById("psalm_player");
+            playButton.innerHTML = "Play >";
         });
         this.button = document.getElementById("psalm_player");
+        console.log("Loading complete!");
     }
 
     getPsalmVerses(psalmNumber) {
@@ -181,14 +183,13 @@ const psalmsEngine = class {
         var psalm = e.value;
         this.loadPsalm(psalm);
         this.audio.addEventListener("ended", function(){
-            this.audio.currentTime = 0;
-            this.button.innerHTML = "Play >";
+            this.currentTime = 0;
+            let playButton = document.getElementById("psalm_player");
+            playButton.innerHTML = "Play >";
         });
     }
     playPsalm() {
-        console.log("Play clicked");
         if (this.button.innerHTML == "Play &gt;") {
-            console.log("Button was on play");
             this.audio.play();
             this.button.innerHTML = "Stop";
         } else {
