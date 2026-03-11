@@ -233,50 +233,11 @@ body {
 .hidden {
     display: none!important;
 }
-.go_button {
-    margin: 0 auto;
-    margin-top: 5px;
-    font-size: 34px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(177, 134, 69);
-    background-color: rgba(255, 255, 255, .6);
-    border-radius: 6px;
-    outline: none;
-    transition: 0.3s;
-    width: 150px;
-}
 
-.go_button:hover {
-    cursor: pointer;
-    background-color: black;
-}
-
-.play_button {
-    margin: 0 auto;
-    margin-top: 5px;
-    font-size: 24px;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(177, 134, 69);
-    background-color: rgba(255, 255, 255, .6);
-    border-radius: 6px;
-    outline: none;
-    transition: 0.3s;
-    width: 150px;
-}
-
-.play_button:hover {
-    cursor: pointer;
-    background-color: black;
-}
 
 .text-center {
     text-align: center;
 }
-
 
 .heroHorizontalImage {
     width: 85vw;
@@ -297,4 +258,58 @@ body {
 .captionText {
     font-size: 16px;
     margin-bottom: 16px;
+}
+
+
+.play_button {
+    padding: 12px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 auto;
+    border: solid 1px var(--primary-color-3);
+    color: var(--primary-color-3);
+    background-color: var(--primary-color-2);
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.play_button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-1)
+}
+
+.go_button {
+    padding: 12px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 auto;
+    border: solid 1px var(--primary-color-3);
+    color: var(--primary-color-3);
+    background-color: var(--primary-color-2);
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.go_button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-1)
+}
+
+.form_select {
+    margin: 0 auto;
+    border: solid 2px var(--primary-color-1);
+    border-radius: 5px;
+}
+
+.selector {
+    font-size: 26px;
+    padding: 10px;
 }

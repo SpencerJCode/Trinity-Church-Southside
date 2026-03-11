@@ -1,2 +1,2 @@
 header:header.html
-content:psalmbook.html
+content:psalter.html

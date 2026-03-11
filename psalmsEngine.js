@@ -59,22 +59,24 @@ const psalmsEngine = class {
 
     goToPsalm() {
         this.audio.pause();
-        this.button.innerHTML = "Play";
+        this.button.innerHTML = "Play >";
         var e = document.getElementById("psalm_select");
         var psalm = e.value;
         this.loadPsalm(psalm);
         this.audio.addEventListener("ended", function(){
             this.audio.currentTime = 0;
-            this.button.innerHTML = "Play";
+            this.button.innerHTML = "Play >";
         });
     }
     playPsalm() {
-        if (this.button.innerHTML == "Play") {
+        console.log("Play clicked");
+        if (this.button.innerHTML == "Play &gt;") {
+            console.log("Button was on play");
             this.audio.play();
-            this.button.innerHTML = "Stop"    
+            this.button.innerHTML = "Stop";
         } else {
             this.audio.pause();
-            this.button.innerHTML = "Play";
+            this.button.innerHTML = "Play >";
         }
     }
 }

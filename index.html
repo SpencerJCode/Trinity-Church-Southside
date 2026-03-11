@@ -63,7 +63,7 @@
             </button>
             <div class="dropdown-content frt-1">
                 <div id="music" class="frt-1" onclick="webEngine.loadPage(this.id)">God's Music</div>
-                <div id="psalms" class="frt-1" onclick="webEngine.loadPage(this.id)">Psalms</div>
+                <div id="psalms" class="frt-1" onclick="loadPsalms()">Psalms</div>
                 <div id="hymns" class="frt-1" onclick="webEngine.loadPage(this.id)">Hymns</div>
                 <div id="spiritualsongs" class="frt-1" onclick="webEngine.loadPage(this.id)">Spiritual Songs</div>
             </div>
@@ -82,5 +82,11 @@
     </div>
     <div id="Content" class="bodyContent"></div>
     <div class="footer bk-2 frt-3" style="margin-top:40px;">KNOWING | LOVING | ENJOYING</div>
+    <script>
+        async function loadPsalms() {
+            await webEngine.loadPage('psalms');
+            psalmEngine.setFirstLoad();
+        }
+    </script>
 </body>
 </html>
