@@ -42,18 +42,18 @@
     </div>
     <div id="Header"></div>
     <div class="navigation frt-1">
-        <div id="imnew" class="navigationItem" onclick="webEngine.loadPage(this.id)">I'm New</div>
+        <div id="imnew" class="navigationItem" onclick="loadPage(this.id)">I'm New</div>
         <div id="aboutus" class="navigationCategory">
             <button class="dropbtn frt-1">
                 About Us
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content frt-1">
-                <div id="lordsday" class="frt-1" onclick="webEngine.loadPage(this.id)">Lord's Day</div>
-                <div id="distinctives" class="frt-1" onclick="webEngine.loadPage(this.id)">Distinctives</div>
-                <div id="beliefs" class="frt-1" onclick="webEngine.loadPage(this.id)">Beliefs</div>
-                <div id="membership" class="frt-1" onclick="webEngine.loadPage(this.id)">Membership</div>
-                <div id="leadership" class="frt-1" onclick="webEngine.loadPage(this.id)">Leadership</div>
+                <div id="lordsday" class="frt-1" onclick="loadPage(this.id)">Lord's Day</div>
+                <div id="distinctives" class="frt-1" onclick="loadPage(this.id)">Distinctives</div>
+                <div id="beliefs" class="frt-1" onclick="loadPage(this.id)">Beliefs</div>
+                <div id="membership" class="frt-1" onclick="loadPage(this.id)">Membership</div>
+                <div id="leadership" class="frt-1" onclick="loadPage(this.id)">Leadership</div>
             </div>
         </div>
         <div class="navigationCategory">
@@ -62,10 +62,10 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content frt-1">
-                <div id="music" class="frt-1" onclick="webEngine.loadPage(this.id)">God's Music</div>
+                <div id="music" class="frt-1" onclick="loadPage(this.id)">God's Music</div>
                 <div id="psalms" class="frt-1" onclick="loadPsalms()">Psalms</div>
-                <div id="hymns" class="frt-1" onclick="webEngine.loadPage(this.id)">Hymns</div>
-                <div id="spiritualsongs" class="frt-1" onclick="webEngine.loadPage(this.id)">Spiritual Songs</div>
+                <div id="hymns" class="frt-1" onclick="loadPage(this.id)">Hymns</div>
+                <div id="spiritualsongs" class="frt-1" onclick="loadPage(this.id)">Spiritual Songs</div>
             </div>
         </div>
         <div id="resources" class="navigationCategory">
@@ -86,6 +86,10 @@
         async function loadPsalms() {
             await webEngine.loadPage('psalms');
             psalmEngine.setFirstLoad();
+        }
+        function loadPage(page){
+            psalmEngine.stopPsalm();
+            webEngine.loadPage(page);
         }
     </script>
 </body>

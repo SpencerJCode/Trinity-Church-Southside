@@ -79,6 +79,10 @@ const psalmsEngine = class {
             this.button.innerHTML = "Play >";
         }
     }
+    
+    stopPsalm() {
+        this.audio.pause();
+    }
 }
 
 psalmEngine = new psalmsEngine();
