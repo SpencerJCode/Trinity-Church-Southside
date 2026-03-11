@@ -23,6 +23,10 @@ class goshenWebEngine {
             let parameter = currentLocation.split('?')[1];
             if (this.pages.includes(parameter)) {
                 this.loadPage(parameter);
+                if(parameter == psalms) {
+                    psalmEngine = new psalmsEngine();
+                    psalmEngine.setFirstLoad();
+                }
             } else {
                 this.loadPage('homepage');
             }
