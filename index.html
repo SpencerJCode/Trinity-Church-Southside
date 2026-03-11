@@ -22,7 +22,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; font-src https://fonts.googleapis.com https://fonts.gstatic.com"-->   
     <script src="goshenWebEngine.js"></script>
-    <script src="psalmsEngine.js"></script>
     <script type="application/ld+json">
         {
             "@context": "http://trinitychurchsouthside.com/",
@@ -85,10 +84,10 @@
     <script>
         async function loadPsalms() {
             await webEngine.loadPage('psalms');
-            psalmEngine.setFirstLoad();
+            webEngine.psalmEngine.setFirstLoad();
         }
         function loadPage(page){
-            psalmEngine.stopPsalm();
+            webEngine.psalmEngine.stopPsalm();
             webEngine.loadPage(page);
         }
     </script>
