@@ -4,7 +4,7 @@ class goshenWebEngine {
     headerDiv;
     contentDiv;
     loader;
-    pages = ['beliefs', 'distinctives', 'homepage', 'imnew', 'leadership', 'lordsday', 'maintenance', 'membership', 'music', 'psalmbook'];
+    pages = ['beliefs', 'distinctives', 'homepage', 'imnew', 'leadership', 'lordsday', 'maintenance', 'membership', 'music', 'psalms'];
     async loadHeader(){
         const resp = await fetch(this.config.header);
         const html = await resp.text();
