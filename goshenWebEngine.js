@@ -55,8 +55,8 @@ class goshenWebEngine {
 
     async loadPage(pageName){
         if (this.config.page != pageName) {
-            await this.config.loadConfig(pageName);
             this.showLoader();
+            await this.config.loadConfig(pageName);
             if (this.config.shouldReloadHeader){
                 await this.loadHeader();
                 this.config.shouldReloadHeader=false;
