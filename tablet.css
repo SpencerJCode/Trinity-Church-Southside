@@ -313,3 +313,8 @@ body {
     font-size: 26px;
     padding: 10px;
 }
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
