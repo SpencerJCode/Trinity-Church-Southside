@@ -1,0 +1,299 @@
+1/7/2026_Joshua 1 
+1/8/2026_Joshua 2 
+1/9/2026_Joshua 3-4 
+1/10/2026_Joshua 5-6 
+1/12/2026_Joshua 7 
+1/13/2026_Joshua 8 
+1/14/2026_Joshua 9 
+1/15/2026_Joshua 10 
+1/16/2026_Joshua 11-12 
+1/17/2026_Joshua 13 
+1/19/2026_Joshua 14 
+1/20/2026_Joshua 15 
+1/21/2026_Joshua 16-17 
+1/22/2026_Joshua 18 
+1/23/2026_Joshua 19-20 
+1/24/2026_Joshua 21 
+1/26/2026_Joshua 22 
+1/27/2026_Joshua 23 
+1/28/2026_Joshua 24 
+1/29/2026_Judges 1 
+1/30/2026_Judges 2 
+1/31/2026_Judges 3 
+2/2/2026_Judges 4 
+2/3/2026_Judges 5 
+2/4/2026_Judges 6 
+2/5/2026_Judges 7 
+2/6/2026_Judges 8 
+2/7/2026_Judges 9 
+2/9/2026_Judges 10-11 
+2/10/2026_Judges 12-13 
+2/11/2026_Judges 14-15 
+2/12/2026_Judges 16 
+2/13/2026_Judges 17-18 
+2/14/2026_Judges 19 
+2/16/2026_Judges 20 
+2/17/2026_Judges 21 
+2/18/2026_1 Samuel 1 
+2/19/2026_1 Samuel 2 
+2/20/2026_1 Samuel 3 
+2/21/2026_1 Samuel 4-5 
+2/23/2026_1 Samuel 6-7 
+2/24/2026_1 Samuel 8-9 
+2/25/2026_1 Samuel 10-11 
+2/26/2026_1 Samuel 12-13 
+2/27/2026_1 Samuel 14 
+2/28/2026_1 Samuel 15-16 
+3/2/2026_1 Samuel 17 
+3/3/2026_1 Samuel 18 
+3/4/2026_1 Samuel 19 
+3/5/2026_1 Samuel 20 
+3/6/2026_1 Samuel 21-22 
+3/7/2026_1 Samuel 23-24 
+3/9/2026_1 Samuel 25 
+3/10/2026_1 Samuel 26-27 
+3/11/2026_1 Samuel 28-29 
+3/12/2026_1 Samuel 30-31 
+3/13/2026_2 Samuel 1 
+3/14/2026_2 Samuel 2 
+3/16/2026_2 Samuel 3 
+3/17/2026_2 Samuel 4-5 
+3/18/2026_2 Samuel 6-7 
+3/19/2026_2 Samuel 8-9 
+3/20/2026_2 Samuel 10-11 
+3/21/2026_2 Samuel 12 
+3/23/2026_2 Samuel 13 
+3/24/2026_2 Samuel 14 
+3/25/2026_2 Samuel 15 
+3/26/2026_2 Samuel 16 
+3/27/2026_2 Samuel 17 
+3/28/2026_2 Samuel 18 
+4/4/2026_Lamentations 1-5
+4/6/2026_2 Samuel 19 
+4/7/2026_2 Samuel 20 
+4/8/2026_2 Samuel 21 
+4/9/2026_2 Samuel 22 
+4/10/2026_2 Samuel 23 
+4/11/2026_2 Samuel 24 
+4/13/2026_1 Kings 1 
+4/14/2026_1 Kings 2 
+4/15/2026_1 Kings 3-4 
+4/16/2026_1 Kings 5-6 
+4/17/2026_1 Kings 7 
+4/18/2026_1 Kings 8 
+4/20/2026_1 Kings 9 
+4/21/2026_1 Kings 10 
+4/22/2026_1 Kings 11 
+4/23/2026_1 Kings 12 
+4/24/2026_1 Kings 13 
+4/25/2026_1 Kings 14 
+4/27/2026_1 Kings 15 
+4/28/2026_1 Kings 16 
+4/29/2026_1 Kings 17 
+4/30/2026_1 Kings 18 
+5/1/2026_1 Kings 19 
+5/2/2026_1 Kings 20 
+5/4/2026_1 Kings 21 
+5/5/2026_1 Kings 22 
+5/6/2026_2 Kings 1-2 
+5/7/2026_2 Kings 3 
+5/8/2026_2 Kings 4 
+5/9/2026_2 Kings 5 
+5/11/2026_2 Kings 6 
+5/12/2026_2 Kings 7 
+5/13/2026_2 Kings 8 
+5/14/2026_Esther 1-10
+5/15/2026_2 Kings 9 
+5/16/2026_2 Kings 10 
+5/18/2026_2 Kings 11-12 
+5/19/2026_2 Kings 13 
+5/20/2026_2 Kings 14 
+5/21/2026_2 Kings 15-16 
+5/22/2026_2 Kings 17 
+5/23/2026_2 Kings 18 
+5/24/2026_Ruth 1-4
+5/25/2026_2 Kings 19 
+5/26/2026_2 Kings 20 
+5/27/2026_2 Kings 21-22 
+5/28/2026_2 Kings 23 
+5/29/2026_2 Kings 24 
+5/30/2026_2 Kings 25 
+6/1/2026_Isaiah 1 
+6/2/2026_Isaiah 2 
+6/3/2026_Isaiah 3-4 
+6/4/2026_Isaiah 5 
+6/5/2026_Isaiah 6-7 
+6/6/2026_Isaiah 8 
+6/8/2026_Isaiah 9 
+6/9/2026_Isaiah 10 
+6/10/2026_Isaiah 11-12 
+6/11/2026_Isaiah 13 
+6/12/2026_Isaiah 14 
+6/13/2026_Isaiah 15-16 
+6/15/2026_Isaiah 17-18 
+6/16/2026_Isaiah 19-20 
+6/17/2026_Isaiah 21-22 
+6/18/2026_Isaiah 23 
+6/19/2026_Isaiah 24 
+6/20/2026_Isaiah 25-26 
+6/22/2026_Isaiah 27 
+6/23/2026_Isaiah 28 
+6/24/2026_Isaiah 29 
+6/25/2026_Isaiah 30 
+6/26/2026_Isaiah 31-32 
+6/27/2026_Isaiah 33 
+6/29/2026_Isaiah 34-35 
+6/30/2026_Isaiah 36 
+7/1/2026_Isaiah 37 
+7/2/2026_Isaiah 38-39 
+7/3/2026_Isaiah 40 
+7/4/2026_Isaiah 41 
+7/6/2026_Isaiah 42 
+7/7/2026_Isaiah 43 
+7/8/2026_Isaiah 44 
+7/9/2026_Isaiah 45 
+7/10/2026_Isaiah 46 
+7/11/2026_Isaiah 47 
+7/13/2026_Isaiah 48 
+7/14/2026_Isaiah 49 
+7/15/2026_Isaiah 50 
+7/16/2026_Isaiah 51 
+7/17/2026_Isaiah 52-53 
+7/18/2026_Isaiah 54 
+7/20/2026_Isaiah 55-56 
+7/21/2026_Isaiah 57 
+7/22/2026_Isaiah 58 
+7/23/2026_Isaiah 59 
+7/24/2026_Isaiah 60 
+7/25/2026_Isaiah 61-62 
+7/27/2026_Isaiah 63-64 
+7/28/2026_Isaiah 65 
+7/29/2026_Isaiah 66 
+7/30/2026_Jeremiah 1 
+7/31/2026_Jeremiah 2 
+8/1/2026_Jeremiah 3 
+8/3/2026_Jeremiah 4 
+8/4/2026_Jeremiah 5 
+8/5/2026_Jeremiah 6 
+8/6/2026_Jeremiah 7 
+8/7/2026_Jeremiah 8 
+8/8/2026_Jeremiah 9 
+8/10/2026_Jeremiah 10 
+8/11/2026_Jeremiah 11-12 
+8/12/2026_Jeremiah 13 
+8/13/2026_Jeremiah 14 
+8/14/2026_Jeremiah 15 
+8/15/2026_Jeremiah 16 
+8/17/2026_Jeremiah 17 
+8/18/2026_Jeremiah 18 
+8/19/2026_Jeremiah 19 
+8/20/2026_Jeremiah 20-21 
+8/21/2026_Jeremiah 22 
+8/22/2026_Jeremiah 23 
+8/24/2026_Jeremiah 24 
+8/25/2026_Jeremiah 25 
+8/26/2026_Jeremiah 26 
+8/27/2026_Jeremiah 27-28 
+8/28/2026_Jeremiah 29 
+8/29/2026_Jeremiah 30 
+8/31/2026_Jeremiah 31 
+9/1/2026_Jeremiah 32 
+9/2/2026_Jeremiah 33 
+9/3/2026_Jeremiah 34 
+9/4/2026_Jeremiah 35 
+9/5/2026_Jeremiah 36 
+9/6/2026_Ecclesiastes 1-12
+9/7/2026_Jeremiah 37 
+9/8/2026_Jeremiah 38 
+9/9/2026_Jeremiah 39-40 
+9/10/2026_Jeremiah 41 
+9/11/2026_Jeremiah 42-43 
+9/12/2026_Jeremiah 44-45 
+9/14/2026_Jeremiah 46-47 
+9/15/2026_Jeremiah 48 
+9/16/2026_Jeremiah 49 
+9/17/2026_Jeremiah 50 
+9/18/2026_Jeremiah 51 
+9/19/2026_Jeremiah 52 
+9/21/2026_Ezekiel 1 
+9/22/2026_Ezekiel 2-3 
+9/23/2026_Ezekiel 4-5 
+9/24/2026_Ezekiel 6-7 
+9/25/2026_Ezekiel 8-9 
+9/26/2026_Ezekiel 10-11 
+9/28/2026_Ezekiel 12 
+9/29/2026_Ezekiel 13 
+9/30/2026_Ezekiel 14-15 
+10/1/2026_Ezekiel 16 
+10/2/2026_Ezekiel 17 
+10/3/2026_Ezekiel 18-19 
+10/5/2026_Ezekiel 20 
+10/6/2026_Ezekiel 21 
+10/7/2026_Ezekiel 22 
+10/8/2026_Ezekiel 23 
+10/9/2026_Ezekiel 24-25 
+10/10/2026_Ezekiel 26 
+10/12/2026_Ezekiel 27 
+10/13/2026_Ezekiel 28 
+10/14/2026_Ezekiel 29 
+10/15/2026_Ezekiel 30 
+10/16/2026_Ezekiel 31 
+10/17/2026_Ezekiel 32 
+10/19/2026_Ezekiel 33 
+10/20/2026_Ezekiel 34-35 
+10/21/2026_Ezekiel 36 
+10/22/2026_Ezekiel 37 
+10/23/2026_Ezekiel 38 
+10/24/2026_Ezekiel 39 
+10/26/2026_Ezekiel 40-1-23 
+10/27/2026_Ezekiel 40:24-49 
+10/28/2026_Ezekiel 41 
+10/29/2026_Ezekiel 42 
+10/30/2026_Ezekiel 43 
+10/31/2026_Ezekiel 44 
+11/2/2026_Ezekiel 45 
+11/3/2026_Ezekiel 46 
+11/4/2026_Ezekiel 47 
+11/5/2026_Ezekiel 48 
+11/6/2026_Hosea 1-2 
+11/7/2026_Hosea 3-4 
+11/9/2026_Hosea 5-6 
+11/10/2026_Hosea 7-8 
+11/11/2026_Hosea 9-10 
+11/12/2026_Hosea 11-12 
+11/13/2026_Hosea 13-14 
+11/14/2026_Joel 1-2 
+11/16/2026_Joel 3 
+11/17/2026_Amos 1-2 
+11/18/2026_Amos 3-4 
+11/19/2026_Amos 5 
+11/20/2026_Amos 6-7 
+11/21/2026_Amos 8-9 
+11/23/2026_Obadiah 1 
+11/24/2026_Jonah 1 
+11/25/2026_Jonah 2 
+11/26/2026_Jonah 3 
+11/27/2026_Jonah 4 
+11/28/2026_Micah 1-2 
+11/30/2026_Micah 3-4 
+12/1/2026_Micah 5-6 
+12/2/2026_Micah 7 
+12/3/2026_Nahum 1-2 
+12/4/2026_Nahum 3 
+12/5/2026_Habakkuk 1-2 
+12/7/2026_Habakkuk 3 
+12/8/2026_Zephaniah 1-2 
+12/9/2026_Zephaniah 3 
+12/10/2026_Haggai 1-2 
+12/11/2026_Zechariah 1-2 
+12/12/2026_Zechariah 3-4 
+12/14/2026_Zechariah 5-6 
+12/15/2026_Zechariah 7-8 
+12/16/2026_Zechariah 9 
+12/17/2026_Zechariah 10 
+12/18/2026_Zechariah 11 
+12/19/2026_Zechariah 12 
+12/21/2026_Zechariah 13 
+12/22/2026_Zechariah 14 
+12/23/2026_Malachi 1-2 
+12/24/2026_Malachi 3-4 

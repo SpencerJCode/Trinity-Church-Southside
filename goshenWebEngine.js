@@ -74,6 +74,41 @@ class goshenWebEngine {
         }
     }
 
+    async loadReadingPlan() {
+        var today = new Date(Date.now());
+        today = today.toLocaleDateString();
+        var otResp = await fetch('OT Reading Plan.txt');
+        var otPlan = await otResp.text();
+        var otPlanArray = otPlan.split(/\r?\n/);
+        let otLocation;
+        for (let i=0; i<otPlanArray.length; i++) {
+            if (otPlanArray[i].split('_')[0] == today) {
+                otLocation = otPlanArray[i].split('_')[1]
+            }
+        }
+        var ntResp = await fetch('NT Reading Plan.txt');
+        var ntPlan = await ntResp.text();
+        var ntPlanArray = ntPlan.split(/\r?\n/);
+        let ntLocation;
+        for (let i=0; i<ntPlanArray.length; i++) {
+            if (ntPlanArray[i].split('_')[0] == today) {
+                ntLocation = ntPlanArray[i].split('_')[1]
+            }
+        }
+        console.log(otLocation);
+        console.log(ntLocation);
+        if (otLocation != null && ntLocation != null) {
+            var webSearch;
+            if (otLocation == ntLocation) {
+                webSearch = 'https://www.biblegateway.com/passage/?search=' + ntLocation.trim() + '&version=LEB';
+            } else {
+                webSearch = 'https://www.biblegateway.com/passage/?search=' + otLocation.trim() + ', ' + ntLocation.trim() + '&version=LEB';
+            }
+            console.log(webSearch);
+            window.open(webSearch, '_self');
+        }
+    }
+
     hideLoader() {
         this.loader.classList.add("hidden");
     }
