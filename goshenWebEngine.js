@@ -100,9 +100,9 @@ class goshenWebEngine {
         if (otLocation != null && ntLocation != null) {
             var webSearch;
             if (otLocation == ntLocation) {
-                webSearch = 'https://www.biblegateway.com/passage/?search=' + ntLocation.trim() + '&version=LEB';
+                webSearch = 'https://www.biblegateway.com/passage/?search=' + ntLocation.trim() + '&version=LSB';
             } else {
-                webSearch = 'https://www.biblegateway.com/passage/?search=' + otLocation.trim() + ', ' + ntLocation.trim() + '&version=LEB';
+                webSearch = 'https://www.biblegateway.com/passage/?search=' + otLocation.trim() + ', ' + ntLocation.trim() + '&version=LSB';
             }
             console.log(webSearch);
             window.open(webSearch, '_self');
