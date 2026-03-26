@@ -80,6 +80,7 @@ body {
 
 .loadingLogo {
     width: 300px;
+    border-radius: 50%;
     margin: 0 auto;
     animation: spin 1.7s linear infinite;
 }
@@ -109,6 +110,7 @@ body {
 
 .logo {
     width: 90px;
+    border-radius: 50%;
     margin-top: 10px;
 }
 
