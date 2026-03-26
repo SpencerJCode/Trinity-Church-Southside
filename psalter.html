@@ -16,8 +16,7 @@
         <button id="psalm_player" class="play_button" onclick="webEngine.psalmEngine.playPsalm()" id="psalm_player">Play ></button>
         <div class="text-center frt-1" style="margin-top: 20px;">Psalm Select</div>
         <div class="form_select">
-            <select id="psalm_select" class="selector"></select>
+            <select id="psalm_select" class="selector" onchange="webEngine.psalmEngine.goToPsalm()"></select>
         </div>
-        <button class="go_button" onclick="webEngine.psalmEngine.goToPsalm()">Go!</button>
     </div>
 </div>
