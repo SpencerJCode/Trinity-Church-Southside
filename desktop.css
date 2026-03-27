@@ -136,7 +136,6 @@ body {
 }
 
 .navigationCategory {
-    float: left;
     overflow: hidden;
     z-index:100;
 }
