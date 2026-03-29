@@ -3,6 +3,13 @@
         <div class="bodyTitle frt-2 text-center">
             TCS Psalter
         </div>
+        <div style="display:flex; flex-direction: column; justify-content: center;">
+            <div class="text-center frt-1" style="margin-top: 20px;">Psalm Select</div>
+            <div class="form_select">
+                <select id="psalm_select" class="selector" onchange="webEngine.psalmEngine.goToPsalm()"></select>
+            </div>
+            <button id="psalm_player" class="play_button" onclick="webEngine.psalmEngine.playPsalm()" id="psalm_player">Play ></button>
+        </div>
         <div>
             <div id="psalm_title" class="sectionTitle frt-3 text-center"></div>
             <div id="psalm_tune" class="sectionTitle frt-3 text-center"></div>
@@ -11,12 +18,5 @@
     </div>
     <div style="width: clamp(350px, 80vw, 600px); margin: 0 auto;">
         <div id="psalm_verses" class="text_center bodyText frt-1" style="display:flex; flex-direction: column; justify-content: center;"></div>
-    </div>
-    <div style="display:flex; flex-direction: column; justify-content: center;">
-        <button id="psalm_player" class="play_button" onclick="webEngine.psalmEngine.playPsalm()" id="psalm_player">Play ></button>
-        <div class="text-center frt-1" style="margin-top: 20px;">Psalm Select</div>
-        <div class="form_select">
-            <select id="psalm_select" class="selector" onchange="webEngine.psalmEngine.goToPsalm()"></select>
-        </div>
     </div>
 </div>
