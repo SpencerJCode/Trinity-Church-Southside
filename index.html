@@ -85,7 +85,7 @@
     <script>
         async function loadPsalms() {
             await webEngine.loadPage('psalms');
-            webEngine.psalmEngine.setFirstLoad();
+            webEngine.psalmEngine.setFirstLoad(1);
         }
         function loadPage(page){
             webEngine.psalmEngine.stopPsalm();

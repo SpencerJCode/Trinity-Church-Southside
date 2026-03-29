@@ -25,7 +25,21 @@ class goshenWebEngine {
             if (this.pages.includes(parameter)) {
                 await this.loadPage(parameter);
                 if(parameter == 'psalms') {
-                    this.psalmEngine.setFirstLoad();
+                    this.psalmEngine.setFirstLoad(1);
+                }
+            } else if (parameter.includes('psalms')) {
+                let parameter2 = parameter.split('salms')[1];
+                let psalmNumber = parseInt(parameter2);
+                if (Number.isInteger(psalmNumber)) {
+                    await this.loadPage('psalms');
+                    if (psalmNumber > 0 && psalmNumber < 150 && this.psalmEngine.PsalmsOptions.includes(psalmNumber)) {
+                        this.psalmEngine.setFirstLoad(psalmNumber);
+                    } else {
+                        this.psalmEngine.setFirstLoad(1);
+                    }
+                } else {
+                    await this.loadPage('psalms');
+                    this.psalmEngine.setFirstLoad(1);
                 }
             } else {
                 this.loadPage('homepage');
@@ -95,8 +109,6 @@ class goshenWebEngine {
                 ntLocation = ntPlanArray[i].split('_')[1]
             }
         }
-        console.log(otLocation);
-        console.log(ntLocation);
         if (otLocation != null && ntLocation != null) {
             var webSearch;
             if (otLocation == ntLocation) {
@@ -104,7 +116,6 @@ class goshenWebEngine {
             } else {
                 webSearch = 'https://www.biblegateway.com/passage/?search=' + otLocation.trim() + ', ' + ntLocation.trim() + '&version=LSB';
             }
-            console.log(webSearch);
             window.open(webSearch, '_self');
         }
     }
@@ -158,10 +169,10 @@ const psalmsEngine = class {
         this.audio = new Audio(`/assets/musicfiles/Psalm${1}.mp3`);
         this.button = null;
     }
-    setFirstLoad() {
-        console.log("Loading Psalm Engine...");
-        this.getPsalmVerses(1);
-        this.getPsalmSelectOptions();
+    async setFirstLoad(psalm) {
+        console.log("Loading Psalm Engine and verse " + psalm);
+        await this.getPsalmVerses(psalm);
+        this.getPsalmSelectOptions(psalm);
         this.audio.addEventListener("ended", function(){
             this.currentTime = 0;
             let playButton = document.getElementById("psalm_player");
@@ -172,6 +183,7 @@ const psalmsEngine = class {
     }
 
     getPsalmVerses(psalmNumber) {
+        console.log('Getting psalm verses for psalm ' + psalmNumber);
         let file = "/assets/psalmTextFiles/psalm" + psalmNumber + ".txt";
         fetch(file).then((res) => res.text()).then((text) => {
             let textArray = text.split('\n');
@@ -200,15 +212,17 @@ const psalmsEngine = class {
         this.getPsalmVerses(this.selectedPsalm);
     }
 
-    getPsalmSelectOptions() {
+    getPsalmSelectOptions(psalm) {
         for (let i=0; i<this.PsalmsOptions.length; i++) {
             var psalmSelectDiv = document.getElementById("psalm_select");
+            console.log(psalmSelectDiv);
             let element = document.createElement("option");
             element.innerHTML = "Psalm " + this.PsalmsOptions[i];
             element.value = this.PsalmsOptions[i];
             element.classList.add("optionBack");
             psalmSelectDiv.appendChild(element);
         }
+        psalmSelectDiv.value = psalm;
     }
 
     goToPsalm() {
