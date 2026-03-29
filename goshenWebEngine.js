@@ -170,7 +170,6 @@ const psalmsEngine = class {
         this.button = null;
     }
     async setFirstLoad(psalm) {
-        console.log("Loading Psalm Engine and verse " + psalm);
         await this.getPsalmVerses(psalm);
         this.getPsalmSelectOptions(psalm);
         this.audio.addEventListener("ended", function(){
@@ -179,11 +178,10 @@ const psalmsEngine = class {
             playButton.innerHTML = "Play >";
         });
         this.button = document.getElementById("psalm_player");
-        console.log("Loading complete!");
+        this.audio = new Audio(`/assets/musicfiles/Psalm${psalm}.mp3`);
     }
 
     getPsalmVerses(psalmNumber) {
-        console.log('Getting psalm verses for psalm ' + psalmNumber);
         let file = "/assets/psalmTextFiles/psalm" + psalmNumber + ".txt";
         fetch(file).then((res) => res.text()).then((text) => {
             let textArray = text.split('\n');
