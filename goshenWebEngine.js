@@ -27,8 +27,8 @@ class goshenWebEngine {
                 if(parameter == 'psalms') {
                     this.psalmEngine.setFirstLoad(1);
                 }
-            } else if (parameter.includes('psalms')) {
-                let parameter2 = parameter.split('salms')[1];
+            } else if (parameter.includes('psalm')) {
+                let parameter2 = parameter.split('salm')[1];
                 let psalmNumber = parseInt(parameter2);
                 if (Number.isInteger(psalmNumber)) {
                     await this.loadPage('psalms');
