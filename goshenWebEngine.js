@@ -169,6 +169,7 @@ const psalmsEngine = class {
         this.audio = new Audio(`/assets/musicfiles/Psalm${1}.mp3`);
         this.button = null;
     }
+    
     async setFirstLoad(psalm) {
         await this.getPsalmVerses(psalm);
         this.getPsalmSelectOptions(psalm);
