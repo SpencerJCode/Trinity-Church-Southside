@@ -165,7 +165,7 @@ const psalmsEngine = class {
     constructor() {
         this.selectedPsalm = 1;
         this.audioPath = `/assets/musicfiles/Psalm*.mp3`;
-        this.PsalmsOptions = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,20,21,22,23,24,25,27,28,29,30,31,32,33,34,37,40,75,90,147];
+        this.PsalmsOptions = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35,37,40,75,90,147];
         this.audio = new Audio(`/assets/musicfiles/Psalm${1}.mp3`);
         this.button = null;
     }
